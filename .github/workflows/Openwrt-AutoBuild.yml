@@ -251,9 +251,9 @@ jobs:
         fi
         df -hT
 
-    - name: SSH connection to Actions
-      uses: stkn34/debugger-action@master
-      if: contains(github.event.action, 'ssh')
+   # - name: SSH connection to Actions
+   #   uses: stkn34/debugger-action@master
+   #   if: contains(github.event.action, 'ssh')
 
     - name: Compile the firmware
       id: compile
